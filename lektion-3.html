@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - Media Queries</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
+    <!-- plugin integration code highlighting -->
+    <link rel="stylesheet" href="css/jquery.highlight.css">
+    <script src="js/jquery.highlight.js"></script>
+</head>
+
+<body class="ch-3">
+    <header>
+        <div class="progressbar"></div>
+        <a href="index.html"><span><i class="fa-solid fa-spa"></i>Home</span></a>
+        <a id="sidebarCollapse">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <!-- sidebar -->
+            <nav class="" id="sidebar">
+                <ul class="sidebar-wrapper pe-md-0">
+                    <li>
+                        <a href="lektion-1.html">Kapitel 1</a>
+                    <li>
+                        <a href="lektion-2.html">Kapitel 2</a>
+                    </li>
+                    <li class="active">
+                        <a href="lektion-3.html">Kapitel 3</a>
+                    </li>
+                    <li>
+                        <a href="lektion-4.html">Kapitel 4</a>
+                    </li>
+                    <li>
+                        <a href="lektion-5.html">Kapitel 5</a>
+                    </li>
+                    <li>
+                        <a href="fazit.html">Abschluss</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- page content -->
+            <div class="maincontent p-3">
+
+                <div class="row intro">
+                    <div class="col-12">
+                        <h1>Kapitel 3</h1>
+                        <h2 class="grape-nuts">Verschiedene Medieneigenschaften</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medieneigenschaften</h4>
+                        <p>
+                            Mit CSS3 wurde die Abfrage von Medieneigenschaften (Media Features) eingeführt und so das
+                            moderne responsive Design möglich gemacht.
+                        </p>
+                        <p>
+                            Medieneigenschaften sind z.B.:
+                        <ul>
+                            <li>Größen von Viewports</li>
+                            <li>Ausrichtungen von Viewports</li>
+                            <li>Farbtiefen für Displays</li>
+                            <li>Bildschirmauflösungen</li>
+                            <li>Interaktionsfunktionen</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medieneigenschaften abfragen</h4>
+                        <p>
+                            Medieneigenschaften schreibst du in das media-Attribut des
+                            <link>-Elements, die @import-Anweisung oder @media-Anweisung.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                <link rel="stylesheet" href="style.css" media="screen and (max-width: 480px)">
+                            </pre>
+                            <p>Das
+                                <link>-Element verweist auf ein externes Stylesheet und setzt sich so zusammen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                @media screen and (max-width: 480px) { 
+                                    /* CSS-Anweisung */
+                                }                                
+                            </pre>
+                            <p>Bei der @media-Anweisung sieht das ähnlich aus.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                @import url("style.css") screen and (max-width: 480px);                          
+                            </pre>
+                            <p>Bei einer @import-Anweisung sieht die Syntax so aus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medieneigenschaften im Überblick</h4>
+                        <p>
+                            Wie zuvor in Kapitel 2 gebe ich dir hier eine Übersicht, diesmal über alle
+                            Medieneigenschaften, die mit CSS3 eingeführt wurden.
+                            Die meisten Medieneigenschaften sind mit den Präfixen <strong>min-</strong> und
+                            <strong>max-</strong> und zusätzlichen <strong>absoluten</strong> oder
+                            <strong>relativen</strong> Größen verwendbar.
+                        </p>
+                        <div class="table-scrollable">
+                            <table>
+                                <tr>
+                                    <th>Media Feature</th>
+                                    <th>Beschreibung</th>
+                                    <th>Werte</th>
+                                </tr>
+                                <tr>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                    <td>Test</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>E-Learning-Projekt SoSe 2022</span>
+        <span>Gruppe 9</span>
+    </footer>
+</body>
+<script src="Dynamic-Quiz/dist/jquery.quiz-min.js"></script>
+
+</html>

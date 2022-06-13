@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - Media Queries</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
+    <!-- plugin integration code highlighting -->
+    <link rel="stylesheet" href="css/jquery.highlight.css">
+    <script src="js/jquery.highlight.js"></script>
+</head>
+
+<body class="ch-2">
+    <header>
+        <div class="progressbar"></div>
+        <a href="index.html"><span><i class="fa-solid fa-spa"></i>Home</span></a>
+        <a id="sidebarCollapse">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <!-- sidebar -->
+            <nav class="" id="sidebar">
+                <ul class="sidebar-wrapper pe-md-0">
+                    <li>
+                        <a href="lektion-1.html">Kapitel 1</a>
+                    <li class="active">
+                        <a href="lektion-2.html">Kapitel 2</a>
+                    </li>
+                    <li>
+                        <a href="lektion-3.html">Kapitel 3</a>
+                    </li>
+                    <li>
+                        <a href="lektion-4.html">Kapitel 4</a>
+                    </li>
+                    <li>
+                        <a href="lektion-5.html">Kapitel 5</a>
+                    </li>
+                    <li>
+                        <a href="fazit.html">Abschluss</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- page content -->
+            <div class="maincontent p-3">
+
+                <div class="row intro">
+                    <div class="col-12">
+                        <h1>Kapitel 2</h1>
+                        <h2 class="grape-nuts">Verschiedene Medientypen</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medientypen</h4>
+                        <p>
+                            Mit der Verwendung von Medientypen kannst du mehrere Stylesheets einbinden, die je nach
+                            Ausgabegerät verwendet werden.
+                            Die häufigsten Medientypen in Gebrauch sind <strong>media='screen'</strong> und
+                            <strong>media='print'</strong>.
+                            Wenn du bei der Einbindung eines Stylesheets keinen Medientyp definierst, gilt es
+                            automatisch für alle Ausgabetypen, was dem Medientyp <strong>media='all'</strong>
+                            gleichkommt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medienabfrage für den Medientyp setzen</h4>
+                        <p>
+                            Das media-Attribut kann in jeder CSS-Einbindungsart stehen.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            <link rel= "stylesheet" href= "styles.css" media= "screen" > 
+                            <link rel= "stylesheet" href= "print.css" media= "print" >
+                        </pre>
+                            <p>
+                                Bei der Einbindung eines externen Stylesheets ordnest du dem link-Element das Attribut
+                                media=''[medientyp]' zu. [medientyp] wird hierbei mit dem entsprechenden Keyword für
+                                den Medientyp ersetzt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            <link rel= "stylesheet" href= "styles.css" media= "screen, projektion" >
+                        </pre>
+                            <p>
+                                Möchtest du mehrere Medientypen für dasselbe Stylesheet angeben, musst du diese durch
+                                ein Komma
+                                voneinander getrennt aufzählen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            @media print { 
+                                /* CSS-Anweisungen */
+                            }
+                        </pre>
+                            <p>
+                                Du kannst innerhalb eines Stylesheets CSS-Eigenschaften einfügen, die nur für bestimmte
+                                Medientypen gelten sollen. Dann definierst du sie in geschweiften Klammern, denen ein
+                                @media
+                                [medientyp] voransteht.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            <style>
+                                @media print { 
+                                /* CSS-Anweisungen */
+                                }
+                                @media screen { 
+                                /* CSS-Anweisungen */
+                                }
+                            </style>                                
+                        </pre>
+                            <p>Auf dieselbe Weise verwendest du @media auch im Style-Element im HTML-Header.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            <style type=”text/css”>
+                                @import url(“styles.css”) screen;
+                            </style>                                                             
+                        </pre>
+                            <p>Den Medientyp kannst du auch in einer @import-Anweisung definieren.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Medientypen im Überblick</h4>
+                        <p>
+                            Es gibt viele verschiedene Medientypen.
+                            Daher gebe ich dir hier eine Übersicht von allen Medientypen, die mit CSS2 und HTML4
+                            eingeführt wurden.
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Media Type</th>
+                                <th>Ausgabeart</th>
+                            </tr>
+                            <tr>
+                                <td>Test</td>
+                                <td>Test</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="quiz-wrapper" id="quiztwo"></div>
+                    </div>
+                </div>
+
+                <div class="row d-none">
+                    <div class="col-12 col-xl-6">
+
+                    </div>
+
+                    <div class="col-12 col-xl-6">
+                        <div class="changeable-image">
+                            <img
+                                src="https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg?t=st=1653854036~exp=1653854636~hmac=41f172f2d0a6f7c70cc2d3b6554845247b8c211ec45ed3e2152aa69054fcaeee&w=1060" />
+                            <img class="hidden"
+                                src="https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-8-e9820a86548427ff8688776e88eb7f26.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-none">
+                    <div class="col-12">
+                        <section class="question-body">
+                            <table class="table">
+                                <tr>
+                                    <th class="keywords">Key word</th>
+                                    <th class="answers">Antworten</th>
+                                </tr>
+                                <tr>
+                                    <td class="keyword">
+                                        <div>Carbohydrate</div>
+                                    </td>
+                                    <td class="answer"></td>
+                                </tr>
+                                <tr>
+                                    <td class="keyword">
+                                        <div>Protein</div>
+                                    </td>
+                                    <td class="answer"></td>
+                                </tr>
+                                <tr>
+                                    <td class="keyword">
+                                        <div>Fats</div>
+                                    </td>
+                                    <td class="answer"></td>
+                                </tr>
+                                <tr>
+                                    <td class="keyword">
+                                        <div>Vitamins</div>
+                                    </td>
+                                    <td class="answer"></td>
+                                </tr>
+                                <tr>
+                                    <td class="keyword">
+                                        <div>Minerals</div>
+                                    </td>
+                                    <td class="answer"></td>
+                                </tr>
+                            </table>
+
+                            <table class="table options-table">
+                                <tr>
+                                    <th class="options">Optionen</th>
+                                </tr>
+                                <tr>
+                                    <td class="option">
+                                        <div class="card">Long-term store of energy.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="option">
+                                        <div class="card">Short-term supply of energy.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="option">
+                                        <div class="card">Needed to maintain health.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="option">
+                                        <div class="card">Needed to maintain health.</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="option">
+                                        <div class="card">Needed for growth and repair of cells.</div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </section>
+                        <div class="score-card"></div>
+                        <div class="button-wrapper">
+                            <a class="check-answer button-default">Ergebnis</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>E-Learning-Projekt SoSe 2022</span>
+        <span>Gruppe 9</span>
+    </footer>
+</body>
+<script src="Dynamic-Quiz/dist/jquery.quiz-min.js"></script>
+
+</html>

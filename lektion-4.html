@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - Media Queries</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
+    <!-- plugin integration code highlighting -->
+    <link rel="stylesheet" href="css/jquery.highlight.css">
+    <script src="js/jquery.highlight.js"></script>
+</head>
+
+<body class="ch-4">
+    <header>
+        <div class="progressbar"></div>
+        <a href="index.html"><span><i class="fa-solid fa-spa"></i>Home</span></a>
+        <a id="sidebarCollapse">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <!-- sidebar -->
+            <nav class="" id="sidebar">
+                <ul class="sidebar-wrapper pe-md-0">
+                    <li>
+                        <a href="lektion-1.html">Kapitel 1</a>
+                    <li>
+                        <a href="lektion-2.html">Kapitel 2</a>
+                    </li>
+                    <li>
+                        <a href="lektion-3.html">Kapitel 3</a>
+                    </li>
+                    <li class="active">
+                        <a href="lektion-4.html">Kapitel 4</a>
+                    </li>
+                    <li>
+                        <a href="lektion-5.html">Kapitel 5</a>
+                    </li>
+                    <li>
+                        <a href="fazit.html">Abschluss</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- page content -->
+            <div class="maincontent p-3">
+
+                <div class="row intro">
+                    <div class="col-12">
+                        <h1>Kapitel 4</h1>
+                        <h2 class="grape-nuts">Media Queries schreiben</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Wozu Media Queries?</h4>
+                        <p>
+                            Mit Media Queries kannst du Ausgabegeräte auf bestimmte Ausdrücke testen.
+                            Bei true, also wenn der Ausdruck zutrifft, wird der CSS-Anwendungsblock in den geschweiften
+                            Klammern des Media Queries verwendet.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h4>Schema</h4>
+                        <p class="mb-3">Media Queries sehen schematisch so aus.</p>
+                        <pre class="code" data-language="HTML-Element">
+                            @media [not|only] type and (expression) [AND (expression)] {
+                                /* CSS-Anweisungen */
+                            }
+                        </pre>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <h4>Komponenten</h4>
+                        <p>
+                            Media Queries setzen sich aus mehreren Komponenten zusammen und die beiden Hauptkomponenten
+                            sind:
+                        <ol>
+                            <li>Das Schlüsselwort für den <strong>Medientyp</strong>. Ein Medientyp kann für sich
+                                alleine stehen oder es
+                                können mehrere Typen mit einem Komma separiert gelistet werden.</li>
+                            <li>Der Ausdruck für die <strong>Medieneigenschaften</strong>. Diese stehen immer in runden
+                                Klammern und es
+                                können auch mehrere Medieneigenschaften kommasepariert aufgelistet werden.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Mehrere Typen und Eigenschaften</h4>
+                        <p>So sieht ein Media Query mit mehreren Typen und Eigenschaften aus.</p>
+                        <pre class="code" data-language="HTML-Element">
+                            @media [not|only] type1, type2, and (expr1, expr2, expr3) {
+                                /* CSS-Anweisungen */
+                            }
+                        </pre>
+                        <p>Neben den beiden Hauptkomponenten gibt es auch <strong>logische Schlüsselwörter</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Schlüsselwörter</h4>
+                        <p>
+                            Die <strong>optionalen</strong> Schlüsselwörter (key words) <strong>not</strong> oder
+                            <strong>only</strong> kannst du einleitend vor den Medientyp stellen:
+                            Mit <strong>not</strong> wird der gesamte Ausdruck eines Media Querys negiert und somit wird
+                            das Stylesheet nicht interpretiert, wenn der Rest der Media Querys nicht zutrifft.
+                            Mit <strong>only</strong> kannst du Stylesheets mit Media Querys vor älteren Browsern
+                            verbergen.
+                            Mit Verwendung dieser Schlüsselwörter stellst du sicher, dass Ausgabemedien, die nicht die
+                            Medieneigenschaften interpretieren, das Stylesheet niemals laden.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h4>Medientypen und Medieneigenschaften kombinieren...</h4>
+                        <pre class="code" data-language="HTML-Element">
+                            @media [not|only] type1 and (expr1), type2 and (expr2), type3 and (expr3) {
+                                /* CSS-Anweisungen */
+                            }
+                        </pre>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <h4>...durch Kommata</h4>
+                        <p>
+                            Ein <strong>Komma</strong> zwischen Typeneigenschaften wirkt wie ein <strong>logisches
+                                or</strong>.
+                            Das bedeutet, nur einer der Ausdrücke muss zutreffen, damit der gesamte Ausdruck wahr ist.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h4>Medientypen und Medieneigenschaften kombinieren...</h4>
+                        <pre class="code" data-language="HTML-Element">
+                            @media [not|only] type1 and (expr1) and (expr2) and (expr3){
+                                /* CSS-Anweisungen */
+                            }
+                        </pre>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <h4>...durch and</h4>
+                        <p>
+                            Du kannst auf verschiedene Eigenschaften prüfen, indem du diese mit <strong>and</strong>
+                            verbindest.
+                            Die Styles werden nur dann verwendet, wenn type1 und jede der Ausdrücke zutreffen.
+                            Steht <strong>not</strong> davor, werden die Styles nicht ausgeführt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 pb-xl-0">
+                        <h4>CSS-Eigenschaften</h4>
+                        <p>Die letzte Komponente sind die CSS-Eigenschaften, die in der geschweiften Klammer stehen.</p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <pre class="code" data-language="HTML-Element">
+                            /* CSS-Anweisungen für Basisversion */
+
+                            @media screen and (min-width: 720px) {
+                            /* CSS-Anweisungen */
+                            }
+                            
+                            @media screen and (min-width: 986px) {
+                            /* CSS-Anweisungen */
+                            }
+                            
+                            @media screen and (min-width: 1200px) {
+                            /* CSS-Anweisungen */
+                            }
+                        </pre>
+                        <p>
+                            Du kannst Blöcke von CSS-Deklarationen direkt im Stylesheet definieren,
+                            die nur unter bestimmten Bedingungen ausgeführt werden.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <pre class="code" data-language="HTML-Element">
+                            <link rel="stylesheet" href="480base.css" media="all">
+                            <link rel="stylesheet" href="720bp.css" media="screen and (min-width: 720px)">
+                            <link rel="stylesheet" href="986bp.css" media="screen and (min-width: 986px)">
+                            <link rel="stylesheet" href="1200bp.css" media="screen and (min-width: 1200px)">
+                        </pre>
+                        <p>
+                            Oder du kannst auch im HTML-Code komplette Stylesheets über link-Elemente zuweisen.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>E-Learning-Projekt SoSe 2022</span>
+        <span>Gruppe 9</span>
+    </footer>
+</body>
+<script src="Dynamic-Quiz/dist/jquery.quiz-min.js"></script>
+
+</html>

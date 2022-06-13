@@ -1,0 +1,83 @@
+
+[{
+    "questions": [{
+      "question": "Test?",
+      "description": "Das ist eine Frage",
+      "answers": [{
+        "answer": "Falsche Antwort",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Richtig",
+        "alert": "<strong>Exakt!</strong>",
+        "true": 1
+      },
+      {
+        "answer": "Noch eine falsche Antwort",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      }]
+    },
+    {
+      "question": "Was ist meine Lieblingsfarbe?",
+      "description": null,
+      "answers": [{
+        "answer": "Rot",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Blau",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Lila",
+        "alert": "<strong>Exakt!</strong>",
+        "true": 1
+      }]
+    },
+    {
+      "question": "Eistee Pfirsich oder Eistee Zitrone?",
+      "description": null,
+      "answers": [{
+        "answer": "Zitrone",
+        "alert": "<strong>Exakt!</strong>",
+        "true": 1
+      },
+      {
+        "answer": "Pfirsich",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Egal",
+        "alert": "<strong>Apathie ist die Hölle auf Erden, mein Freund.</strong>",
+        "true": 0
+      }]
+    },
+    {
+      "question": "Anthony Bridgertons Soulmate?",
+      "description": null,
+      "answers": [{
+        "answer": "Edwina",
+        "alert": "<strong>Diese Antwort ist falsch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Penelope",
+        "alert": "<strong>Schau mal bitte Bridgerton, du Mulch.</strong>",
+        "true": 0
+      },
+      {
+        "answer": "Kate",
+        "alert": "<strong>Exakt!</strong>",
+        "true": 1
+      }]
+    }],
+    "params": {
+      "intro": 1,
+      "intromessage": "jQuery Plugin zum Erstellen von responsive Quizzes. "
+    }
+  }]

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning - Media Queries</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
+    <!-- plugin integration code highlighting -->
+    <link rel="stylesheet" href="css/jquery.highlight.css">
+    <script src="js/jquery.highlight.js"></script>
+</head>
+
+<body class="ch-1">
+    <header>
+        <div class="progressbar"></div>
+        <a href="index.html"><span><i class="fa-solid fa-spa"></i>Home</span></a>
+        <a id="sidebarCollapse">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <!-- sidebar -->
+            <nav class="" id="sidebar">
+                <ul class="sidebar-wrapper pe-md-0">
+                    <li class="active">
+                        <a href="lektion-1.html">Kapitel 1</a>
+                    <li>
+                        <a href="lektion-2.html">Kapitel 2</a>
+                    </li>
+                    <li>
+                        <a href="lektion-3.html">Kapitel 3</a>
+                    </li>
+                    <li>
+                        <a href="lektion-4.html">Kapitel 4</a>
+                    </li>
+                    <li>
+                        <a href="lektion-5.html">Kapitel 5</a>
+                    </li>
+                    <li>
+                        <a href="fazit.html">Abschluss</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- page content -->
+            <div class="maincontent p-3">
+
+                <div class="row intro">
+                    <div class="col-12">
+                        <h1>Kapitel 1</h1>
+                        <h2 class="grape-nuts">Eine Auffrischung in CSS</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            [Einleitungstext zu Kapitel 1 - Eine Auffrischung in CSS]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h4>Cascading Stylesheets</h4>
+                        <p>
+                            Seit den 90er Jahren wurde es zur Standardprozedur, Cascading Stylesheets (CSS) für die
+                            Gestaltung und Präsentation von Inhalten im Web zu verwenden.
+                        </p>
+                        <p>
+                            Durch sie kannst du Merkmale wie Farben, Layout und Schrifteigenschaften seperat von
+                            HTML-Code definieren.
+                            Auch kannst du das Design einer ganzen Website nur durch das Austauschen des Stylesheets
+                            ändern.
+                        </p>
+                        <p>
+                            Zur Veranschaulichung siehst du hier die Aufnahme einer Website ohne ein
+                            eingebundenes Stylesheet (oder über andere Wege eingebundene CSS-Rules) ...
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img src="" alt="[Aufnahme einer Website ohne CSS-Rules]">
+                            <figcaption>Website ohne CSS-Rules.</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img src="" alt="[Aufnahme einer Website mit CSS-Rules]">
+                            <figcaption>Website mit CSS-Rules.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <p>
+                            ... und so sieht dieselbe Website mit der Einbindung eines (exemplarischen) Stylesheets aus.
+                        </p>
+                        <p>
+                            Bei der dargestellten Website handelt es sich übrigens um den sogenannten <a target="_blank"
+                                href="http://www.csszengarden.com/">CSS Zen Garden</a>.
+                            Das ist eine Website, die sich ganz dem Thema "CSS-basiertes Design" widmet.
+                            Sie ist sehr zu empfehlen, wenn du dich über meine kleine Demonstration hinaus für das
+                            Thema interessierst.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Einbindung von CSS</h4>
+                        <p>
+                            Wie du vermutlich weißt, kann die Zuweisung von Stylesheets bzw. von CSS-Rules auf
+                            verschiedene Weisen erfolgen.
+                            Im folgenden Abschnitt präsentiere ich dir aus diesem Grund nochmal jede mögliche
+                            Einbindungsart.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                <link rel="stylesheet" type="text/css" href="styles.css">
+                            </pre>
+                            <p>Durch Referenz auf ein externes Stylesheet im Header der HTML-Datei</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                            <style type="text/css">
+                                /* CSS-Anweisungen */
+                             </style>
+                        </pre>
+                            <p>Mit dem HTML-Element <strong>style</strong> im Header</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-4">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                <style type= "text/css" > @import url ("styles.css"); </style>
+                            </pre>
+                            <p>Mit einer @import-Anweisung im <strong>style</strong> Element</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        Einzelne CSS-Angaben kannst du auch direkt im Style-Attribut eines Elements machen.
+                        Es ist aber i.d.R. empfehlenswert und gängige Praxis, Inhalt und Styling voneinander zu trennen.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>CSS Syntax</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="quiz-wrapper" id="quizone"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <span>E-Learning-Projekt SoSe 2022</span>
+        <span>Gruppe 9</span>
+    </footer>
+</body>
+<script src="Dynamic-Quiz/dist/jquery.quiz-min.js"></script>
+
+</html>
