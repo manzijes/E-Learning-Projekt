@@ -282,6 +282,17 @@ a#sidebarCollapse {
     display: none;
 }
 
+.person{
+    max-height: 350px;
+    justify-self: center;
+}
+
+.image-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 /* footer */
 
 footer{
