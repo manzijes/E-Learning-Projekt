@@ -282,6 +282,15 @@ a#sidebarCollapse {
     display: none;
 }
 
+figcaption {
+    font-size: 12px;
+    margin-top: 0.2rem;
+}
+
+.bordered{
+    border: 0.5px solid var(--greenish);
+}
+
 .person{
     max-height: 350px;
     justify-self: center;

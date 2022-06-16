@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 249 284" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path style="stroke: rgb(230, 235, 204); fill: rgb(230, 235, 204); stroke-linecap: round;" d="M 107.575 24.681 C 107.575 24.681 133.232 -3.725 171.168 12.402 C 209.104 28.529 207.821 142.886 207.821 142.886 C 207.821 142.886 126.634 199.698 50.763 180.272 C -25.108 160.846 22.358 135.005 22.358 135.005 C 22.358 135.005 4.031 112.647 24.19 100.002 C 44.349 87.357 75.138 99.819 93.647 70.313 C 95.113 60.417 81.552 42.091 107.575 24.681 Z">
+    <title>Hair</title>
+  </path>
+  <g transform="matrix(1, 0, 0, 1, -32.763653, -78.159059)">
+    <title>Body</title>
+    <path style="stroke: rgb(247, 122, 62); fill: rgb(247, 122, 62);" d="M 145.512 132.756 C 145.512 132.756 142.047 183.41 178.268 185.669 C 214.489 187.928 200.63 132.126 200.63 132.126 C 200.63 132.126 170.167 98.911 145.512 132.756 Z"/>
+    <path style="stroke: rgb(247, 122, 62); fill: rgb(247, 122, 62);" d="M 191.949 177.994 L 191.949 196.892 C 191.949 196.892 192.894 212.325 199.508 211.38 C 206.122 210.435 229.931 212.212 229.931 212.212 C 229.931 212.212 236.021 244.051 201.083 248.86 C 166.145 253.669 180.296 252.64 179.351 252.01 C 136.201 265.238 133.682 214.845 133.682 214.845 C 133.682 214.845 147.539 214.845 157.933 213.585 C 168.327 212.325 167.697 199.727 167.697 199.727 L 166.437 180.829"/>
+    <path style="stroke: rgb(247, 122, 62); fill: rgb(247, 122, 62);" d="M 149.127 148.367 C 149.127 148.367 136.448 141.513 134.734 146.996 C 133.02 152.479 135.077 158.133 135.077 158.133 C 135.077 158.133 149.127 164.987 149.984 159.333 C 150.841 153.679 149.47 149.223 149.127 148.367 Z"/>
+    <path style="stroke: rgb(247, 122, 62); fill: rgb(247, 122, 62);" d="M 215.381 154.418 C 215.381 154.418 202.702 161.272 200.988 155.789 C 199.274 150.306 201.331 144.652 201.331 144.652 C 201.331 144.652 215.381 137.798 216.238 143.452 C 217.095 149.106 215.724 153.562 215.381 154.418 Z" transform="matrix(-1, 0, 0, -1, 416.821381, 299.131485)"/>
+  </g>
+  <path style="stroke: rgb(230, 235, 204); fill: rgb(230, 235, 204);" d="M 110.508 47.039 C 110.508 47.039 135.065 65.915 138.547 45.206 C 142.029 24.497 110.141 46.122 110.508 47.039 Z">
+    <title>Bangs left</title>
+  </path>
+  <path style="stroke: rgb(230, 235, 204); fill: rgb(230, 235, 204);" d="M 167.869 49.421 C 167.869 49.421 139.097 64.815 136.348 38.059 C 133.599 11.303 169.152 49.421 167.869 49.421 Z">
+    <title>Bangs right</title>
+  </path>
+  <g transform="matrix(1, 0, 0, 1, -32.763653, -76.020028)" style="">
+    <title>Clothes</title>
+    <path style="fill: none; stroke-width: 5px; stroke-linecap: round; stroke: rgb(0, 111, 139);" d="M 145.919 210.135 C 145.919 210.135 187.041 247.316 215.312 206.365"/>
+    <path style="stroke: rgb(0, 111, 139); fill: rgb(0, 111, 139);" d="M 145.844 208.163 C 145.844 208.163 124.891 208.706 115.81 219.843 C 106.729 230.98 87.253 334.253 87.253 334.253"/>
+    <path style="fill: rgb(0, 111, 139); stroke: rgb(0, 111, 139);" d="M 269.542 331.298 C 269.542 331.298 246.933 330.776 237.852 319.639 C 228.771 308.502 213.288 205.208 213.288 205.208" transform="matrix(-1, 0, 0, -1, 484.768951, 535.636703)"/>
+    <path style="stroke: rgb(0, 111, 139); fill: rgb(0, 111, 139);" d="M 87.365 334.397 C 87.365 334.397 212.444 364.162 271.282 330.16 L 218.681 206.269 C 218.681 206.269 189.705 247.959 143.581 210.113 L 87.365 334.397 Z"/>
+  </g>
+  <path style="fill: none; stroke: rgb(191, 0, 0); stroke-linecap: round; stroke-width: 2px;" d="M 103.834 73.203 C 103.834 73.203 104.815 66.229 112.77 71.678">
+    <title>Ear Detail left</title>
+  </path>
+  <path style="fill: none; stroke-linecap: round; stroke: rgb(191, 0, 0); stroke-width: 2px;" d="M 170.743 68.736 C 170.743 68.736 181.967 62.96 180.768 69.498">
+    <title>Ear Detail right</title>
+  </path>
+  <g style="visibility: hidden;" transform="matrix(1, 0, 0, 1, -30.451434, -75.117685)">
+    <title>Eye left</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px;" d="M 153.162 145.587 C 153.162 145.587 159.046 139.158 165.803 144.497"/>
+    <line style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" x1="153.147" y1="145.509" x2="150.878" y2="143.145"/>
+    <line style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" x1="154.457" y1="144.165" x2="153.299" y2="142.828"/>
+  </g>
+  <g style="visibility: hidden;" transform="matrix(-1, 0, 0, 1, 316.018102, -76.200692)">
+    <title>Eye right</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px;" d="M 153.162 145.587 C 153.162 145.587 159.046 139.158 165.803 144.497"/>
+    <line style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" x1="153.147" y1="145.509" x2="150.878" y2="143.145"/>
+    <line style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" x1="154.457" y1="144.165" x2="153.299" y2="142.828"/>
+  </g>
+  <path style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" d="M 143.24 69.444 L 144.042 77.254 C 144.042 77.254 147.145 78.164 147.68 76.666 C 148.215 75.168 151.05 80.892 145.112 82.122">
+    <title>Nose</title>
+  </path>
+  <g transform="matrix(1, 0, 0, 1, -32.763653, -78.159059)">
+    <title>Shadow</title>
+    <path style="stroke-linecap: round; fill: none; stroke: rgb(191, 0, 0); stroke-width: 2px;" d="M 170.951 183.88 C 170.951 183.88 190.618 186.975 196.079 180.536"/>
+    <path style="stroke-linecap: round; stroke: rgb(191, 0, 0); fill: rgb(191, 0, 0);" d="M 173.51 184.595 C 173.51 184.595 180.812 195.563 191.923 194.298 L 191.962 184.022 C 185.802 185.654 179.56 185.86 173.51 184.595 Z"/>
+  </g>
+  <path style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px; visibility: hidden;" d="M 138.773 93.032 C 144.526 96.374 149.134 94.635 153.291 92.556">
+    <title>Mouth</title>
+  </path>
+  <g transform="matrix(1, 0, 0, 1, -32.763653, -78.159059)" style="">
+    <title>Details</title>
+    <path style="fill: none; stroke-linecap: round; stroke: rgb(255, 255, 255); stroke-width: 2px;" d="M 144.969 224.411 C 179.738 246.796 206.787 241.968 225.34 207.714"/>
+    <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke: rgb(255, 255, 255); stroke-width: 2px;" d="M 135.901 266.485 L 115.729 342.313"/>
+    <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke: rgb(255, 255, 255); stroke-width: 2px;" d="M 228.311 261.626 L 247.954 342.314"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 149.154 214.551 C 148.27 216.142 146.477 217.279 143.774 217.961"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 155.117 220.1 C 154.233 221.691 152.44 222.828 149.737 223.51" transform="matrix(0.987688, -0.156434, 0.156434, 0.987688, -32.821238, 26.575549)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 162.55 224.055 C 161.666 225.646 159.873 226.783 157.17 227.465" transform="matrix(0.97437, -0.224951, 0.224951, 0.97437, -46.687732, 41.746872)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 172.196 227.371 C 171.112 228.962 168.903 230.099 165.568 230.781" transform="matrix(0.671861, -0.740677, 0.740677, 0.671861, -114.254608, 200.255741)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 181.961 228.506 C 180.877 230.097 178.668 231.234 175.333 231.916" transform="matrix(0.601827, -0.798626, 0.798626, 0.601827, -112.720192, 234.335936)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 193.266 227.861 C 192.182 229.452 189.973 230.589 186.638 231.271" transform="matrix(0.325583, -0.945514, 0.945514, 0.325583, -88.950856, 334.425445)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 204.293 223.346 C 203.3 224.937 201.276 226.074 198.221 226.756" transform="matrix(0.000016, -1, 1, 0.000016, -23.797219, 426.30439)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 212.586 217.041 C 211.613 218.632 209.63 219.769 206.635 220.451" transform="matrix(-0.438357, -0.898801, 0.898801, -0.438357, 104.885592, 503.032949)"/>
+    <path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-width: 2px;" d="M 218.539 209.855 C 217.555 211.474 215.55 212.63 212.523 213.324" transform="matrix(-0.656047, -0.75472, 0.75472, -0.656047, 197.238614, 513.067719)"/>
+  </g>
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(72, 50, 50); visibility: hidden;" cx="128.842" cy="71.051" rx="2.441" ry="2.264">
+    <title>Eye left</title>
+  </ellipse>
+  <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(72, 50, 50); visibility: hidden;" cx="157.109" cy="68.929" rx="2.441" ry="2.264">
+    <title>Eye right</title>
+  </ellipse>
+  <g style="">
+    <title>Eyebrows</title>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 2px;" d="M 124.327 67.063 L 133.208 64.4"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 2px;" d="M 153.43 62.595 L 163.013 65.86" transform="matrix(-1, 0, 0, -1, 316.442993, 128.455002)"/>
+  </g>
+  <g style="">
+    <title>Eye left</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px;" d="M 124.502 73.19 C 124.502 73.19 127.966 67.032 136.689 70.368" transform="matrix(0.990268, 0.139173, -0.139173, 0.990268, 11.191701, -17.481642)"/>
+    <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(60, 33, 33);" cx="131.326" cy="72.06" rx="2.513" ry="1.995" transform="matrix(0.990268, 0.139173, -0.139173, 0.990268, 9.851373, -17.529116)"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" d="M 121.725 70.192 L 123.312 71.769" transform="matrix(-0.99999, -0.004373, 0.004373, -0.99999, 245.222637, 143.001819)" bx:origin="0.657 0.66"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" d="M 123.147 69.691 L 124.734 71.268" transform="matrix(-0.99999, -0.004373, 0.004373, -0.99999, 248.068824, 142.006044)" bx:origin="0.657 0.66"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px; visibility: hidden;" d="M 123.456 67.57 C 123.456 67.57 130.223 63.859 136.22 66.951">
+      <title>Eyebrow left</title>
+    </path>
+  </g>
+  <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px;" d="M 141.903 94.905 C 141.903 94.905 150.931 91.745 153.64 93.25">
+    <title>Mouth</title>
+  </path>
+  <g style="">
+    <title>Eye right</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px;" d="M 151.621 67.826 C 151.621 67.826 155.085 73.984 163.808 70.648" transform="matrix(-0.97437, 0.224951, -0.224951, -0.97437, 327.073158, 102.199494)"/>
+    <ellipse style="stroke: rgb(0, 0, 0); fill: rgb(60, 33, 33);" cx="131.326" cy="72.06" rx="2.513" ry="1.995" transform="matrix(-0.990268, 0.139173, 0.139173, 0.990268, 277.01469, -19.41362)"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" d="M 164.312 70.081 L 165.899 68.504" transform="matrix(0.99999, -0.004373, 0.004373, 0.99999, -0.302539, 0.723761)" bx:origin="0.657 0.66"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" d="M 162.889 69.58 L 164.476 68.003" transform="matrix(0.99999, -0.004373, 0.004373, 0.99999, -0.300361, 0.717534)" bx:origin="0.657 0.66"/>
+    <path style="stroke: rgb(0, 0, 0); stroke-linecap: round; fill: none; stroke-width: 2px; visibility: hidden;" d="M 150.998 62.567 C 150.998 62.567 157.765 58.856 163.762 61.948">
+      <title>Eyebrow right</title>
+    </path>
+  </g>
+  <g style="visibility: hidden;">
+    <title>Bubble</title>
+    <path style="stroke: rgb(0, 0, 0); stroke-width: 2px; stroke-linecap: round; fill: rgb(227, 227, 227);" d="M 42.564 67.921 C 43.855 76.954 56.222 77.946 61.837 72.332 C 63.917 70.251 66.186 67.104 66.186 63.994 C 66.186 62.715 65.42 61.481 64.495 60.672 C 64.181 60.397 63.969 60.077 63.709 59.765 C 63.582 59.612 63.087 59.342 63.287 59.342 C 70.968 59.342 75.623 49.108 76.94 42.849 C 77.206 41.588 78.527 38.872 78.088 37.774 C 77.142 35.409 75.18 34.391 72.651 34.391 C 72.336 34.391 69.388 35.237 69.388 35.237 C 69.388 35.237 70.289 33.411 70.778 32.518 C 71.768 30.709 72.463 29.159 73.013 27.141 C 73.346 25.922 72.588 25.08 71.926 24.181 C 70.368 22.066 69.088 20.376 66.549 19.287 C 63.551 18.003 60.535 18.63 57.91 20.435 C 57.041 21.032 56.192 21.738 55.674 22.671 C 55.651 22.713 55.312 23.637 55.312 23.637 C 55.312 23.637 54.191 21.78 54.043 21.644 C 52.6 20.312 50.958 18.659 49.089 17.958 C 43.631 15.911 37.969 17.447 33.502 20.798 C 30.533 23.025 28.236 28.094 29.635 31.733 C 30.237 33.296 31.7 34.794 33.26 35.418 C 33.262 35.419 35.194 36.059 35.194 35.962 C 35.194 35.284 32.56 34.927 32.173 34.874 C 28.848 34.421 25.586 34.977 22.809 36.989 C 16.303 41.7 11.458 48.395 10.967 56.745 C 10.582 63.293 16.659 67.283 22.688 67.438 C 24.619 67.488 26.654 66.532 28.427 66.532 C 28.835 66.532 27.721 66.944 27.4 67.196 C 25.66 68.564 26.388 68.231 24.863 70.519 C 23.236 72.96 20.217 76.981 22.809 80.004 C 24.78 82.305 27.697 82.396 30.421 81.877 C 35.439 80.921 40.562 76.992 44.135 73.419"/>
+    <path style="stroke: rgb(0, 0, 0); fill: none; stroke-linecap: round; stroke-width: 2px;" d="M 43.289 35.479 C 45.336 33.433 53.042 32.643 52.17 37.291 C 51.388 41.463 46.956 41.598 45.102 44.843 C 44.187 46.444 44.86 48.323 44.86 49.978"/>
+    <path style="stroke: rgb(0, 0, 0); fill: rgb(208, 208, 208);" d="M 71.783 60.567 C 70.689 60.895 69.107 62.235 69.373 63.56 C 69.581 64.602 71 66.046 72.133 65.621 C 73.592 65.074 74.808 63.387 74.582 61.811 C 74.359 60.247 71.953 60.013 70.889 60.722"/>
+    <path style="stroke: rgb(0, 0, 0); fill: rgb(208, 208, 208);" d="M 78.004 63.522 C 76.71 63.683 77.056 65.53 78.237 65.699 C 79.012 65.81 80.354 64.272 79.52 63.716 C 78.717 63.181 78.153 63.91 77.421 63.91"/>
+    <path style="stroke: rgb(0, 0, 0); fill: rgb(208, 208, 208);" d="M 84.808 64.843 C 84.57 64.814 83.913 64.689 83.719 64.882 C 83.491 65.111 83.415 66.149 83.758 66.321 C 85.1 66.992 84.754 63.926 83.719 64.96"/>
+    <path stroke-width="0" d="M 44.618 54.03 C 45.019 54.014 46.243 54.075 46.593 54.459 C 46.921 54.819 46.896 55.716 46.764 56.176 C 46.65 56.576 46.388 56.965 45.992 57.12 C 45.494 57.314 44.212 57.28 43.846 56.948 C 43.532 56.664 43.614 55.951 43.674 55.489 C 43.733 55.037 43.987 54.424 44.189 54.201 C 44.319 54.058 44.396 54.038 44.618 54.03 Z" style="stroke-width: 2px; fill: rgb(223, 223, 223); stroke: rgb(0, 0, 0);"/>
+  </g>
+</svg>
