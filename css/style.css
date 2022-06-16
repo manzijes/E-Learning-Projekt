@@ -361,6 +361,18 @@ table:not(.question-body *, .question-body) {
     height: 100%;
 }
 
+.disabled{
+    pointer-events: none;
+}
+
+.disabled:before{
+    content: "\f023";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: darkgray;
+    padding-right: 0.5rem;
+}
+
 /* changeable image */
 
 .changeable-image{

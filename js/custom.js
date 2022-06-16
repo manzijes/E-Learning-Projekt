@@ -1,8 +1,15 @@
 $(document).ready(function () {
 
+  // DEVELOPMENT ON // DELETE IF DONE
+  $(".disabled").removeClass("disabled");
+  $(".confirmation").removeClass("confirmation");
+  
+  $('.confirmation').on('click', function () {
+    return confirm('Bist du sicher, dass du zurück möchtest? Wenn du zurückgehst, geht dein Fortschritt verloren.');
+  });
+
   // initialize code highlighting plugin
   $('pre.code').highlight({
-    // show source code tab
     source: false,
   });
 
@@ -114,8 +121,12 @@ $(document).ready(function () {
       // handle results
       onResults: function (good, total) {
         var perc = good / total;
+
+        $(".ch-2").removeClass("disabled")
+
         $input = $('<a class="button-default" href="lektion-2.html">Weiter mit Kapitel 2</a>');
         $input.appendTo($("#quizone"));
+
         var alert = $('<div class="alert"></div>')
           .prependTo(this);
         if (perc == 0) {
