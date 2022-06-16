@@ -33,12 +33,12 @@
           {
             "answer": "Einbindung durch Referenz auf ein externes Stylesheet im Header der HTML-Datei",
             "alert": "<strong>Das stimmt. Das sähe dann so aus: <br> <link rel='stylesheet' type='text/css' href='styles.css'></strong>",
-            "true": 0
+            "true": 1
           },
           {
             "answer": "Einbindung mit dem HTML-Element css im Header",
             "alert": "<strong>Falsch! Es gibt kein HTML-Element namens css. Es ginge allerdings mit dem HTML-Element style im Header.</strong>",
-            "true": 1
+            "true": 0
           }
         ]
       },

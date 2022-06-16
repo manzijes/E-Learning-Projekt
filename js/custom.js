@@ -114,6 +114,8 @@ $(document).ready(function () {
       // handle results
       onResults: function (good, total) {
         var perc = good / total;
+        $input = $('<a class="button-default" href="lektion-2.html">Weiter mit Kapitel 2</a>');
+        $input.appendTo($("#quizone"));
         var alert = $('<div class="alert"></div>')
           .prependTo(this);
         if (perc == 0) {
