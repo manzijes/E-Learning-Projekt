@@ -373,6 +373,16 @@ table:not(.question-body *, .question-body) {
     padding-right: 0.5rem;
 }
 
+.person{
+-webkit-mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }
+
 /* changeable image */
 
 .changeable-image{
