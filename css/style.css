@@ -385,21 +385,32 @@ table:not(.question-body *, .question-body) {
 
 /* quiz style overwrite */
 
+a#quiz-restart-btn {
+    display: none;
+}
+
+div#quiz-buttons {
+    margin-top: 1rem;
+}
+
 .question {
     margin-bottom: 1rem !important;
 }
 
-#quiz-controls {
+#quiz-controls:not(.quiz-results-state #quiz-controls) {
     background-color: var(--greenish) !important;
+    margin-top: 1rem;
 }
 
 .answers a.incorrect {
     background: var(--red) !important;
+    border-color: var(--red);
     color: var(--dark) !important;
 }
 
 .answers a.correct {
-    background: palegreen !important;
+    background: lightgreen !important;
+    border-color: lightgreen;
     color: var(--dark) !important;
 }
 
@@ -408,7 +419,7 @@ table:not(.question-body *, .question-body) {
 }
 
 .answers a {
-    border: 1px solid var(--dark);
+    border: 1px solid grey;
 }
 
 .answers a:hover{

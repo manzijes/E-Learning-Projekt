@@ -85,7 +85,11 @@ const quizTwo = [
 $(document).ready(function () {
 
   $('#quiz-1').quiz({
-    questions: quizOne
+    questions: quizOne,
+    // button text
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
+    restartButtonText: 'Neustart'
   });
 
   $('#quiz-2').quiz({
