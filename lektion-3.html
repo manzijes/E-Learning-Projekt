@@ -169,10 +169,84 @@
                                     <th>Werte</th>
                                 </tr>
                                 <tr>
-                                    <td>Test</td>
-                                    <td>Test</td>
-                                    <td>Test</td>
+                                    <td>width (min-/max-)</td>
+                                    <td>Breite der sichtbaren Ausgabe (Viewport)</td>
+                                    <td>px, %, em</td>
                                 </tr>
+                                <tr>
+                                    <td>height (min-/max-)</td>
+                                    <td>Höhe der sichtbaren Ausgabe (Viewport)</td>
+                                    <td>px, %, em</td>
+                                </tr>
+                                <tr>
+                                    <td>device-width</td>
+                                    <td>Breite des Displays des Ausgabegeräts (oder Breite einer gedruckten Seite)</td>
+                                    <td>px, %, em</td>
+                                </tr>
+                                <tr>
+                                    <td>device-height</td>
+                                    <td>Höhe des Displays des Ausgabegeräts (oder Höhe einer gedruckten Seite)</td>
+                                    <td>px, %, em</td>
+                                </tr>
+                                <tr>
+                                    <td>orientation</td>
+                                    <td>Prüft die Ausrichtung eines Ausgabegeräts.</td>
+                                    <td>portrait, landscape</td>
+                                </tr>
+                                <tr>
+                                    <td>aspect-ratio (min-/max-)</td>
+                                    <td>Prüft das Seitenverhältnis des Ausgabegeräts</td>
+                                    <td>Breite/Höhe, z.B. 16/9</td>
+                                </tr>
+                                <tr>
+                                    <td>device-aspect-ratio (min-/max-)</td>
+                                    <td>Prüft das Seitenverhältnis des Ausgabegeräts</td>
+                                    <td>Breite/Höhe, z.B. 16/9</td>
+                                </tr>
+                                <tr>
+                                    <td>color</td>
+                                    <td>Prüft die Farbtiefe des Ausgabegeräts</td>
+                                    <td>integer</td>
+                                </tr>
+                                <tr>
+                                    <td>color-index (min-/max-)</td>
+                                    <td>Prüft das Ausgabegerät auf die Verwendung von indizierten Farben</td>
+                                    <td>integer</td>
+                                </tr>
+                                <tr>
+                                    <td>monochrome (min-/max-)</td>
+                                    <td>Prüft die Farbtiefe auf monochromen Ausgabegeräten. 
+                                        <i>monochrome:0</i> wäre der Wert für nicht monochrome Geräte</td>
+                                    <td>integer</td>
+                                </tr>
+                                <tr>
+                                    <td>resolution</td>
+                                    <td>Prüft die Pixeldichte in dpi (dots per inch) oder dpcm (dots per centimeter)</td>
+                                    <td>dpi, dpcm</td>
+                                </tr>
+                                <tr>
+                                    <td>scan</td>
+                                    <td>Testet TV-Geräte auf die Bilddarstellungsarten Vollbild (progressive) und Halbbild (interlace)</td>
+                                    <td>progressive, interlace</td>
+                                </tr>
+                                <tr>
+                                    <td>grid</td>
+                                    <td>Prüft die Rastereigenschaften. 
+                                        Bei Ausgabemedien, die Inhalte in einem Raster darstellen, ist der Wert 1,
+                                        bei einer Bitmap-Darstellung ist der Wert 0</td>
+                                    <td>0, 1</td>
+                                </tr>
+                                <tr>
+                                    <td>pointer, any-pointer</td>
+                                    <td>Prüft, ob das Ausgabegerät eine Maus als primäres Eingabegerät 
+                                        oder überhaupt ein Eingabegerät zur Verfügung stellt</td>
+                                    <td>none, coarse, fine</td>
+                                </tr>
+                                <tr>
+                                    <td>hover, any-hover</td>
+                                    <td>Prüft, ob das Ausgabegerät Hovereffekte beim primären Eingabegerät
+                                        oder überhaupt zur Verfügung stellt</td>
+                                    <td>none, hover</td>
                             </table>
                         </div>
                     </div>
