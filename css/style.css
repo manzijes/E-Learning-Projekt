@@ -383,6 +383,35 @@ table:not(.question-body *, .question-body) {
     100% {-webkit-mask-position:left}
   }
 
+/* quiz style overwrite */
+
+#quiz-controls {
+    background-color: var(--greenish) !important;
+}
+
+.answers a.incorrect {
+    background: var(--red) !important;
+    color: var(--dark) !important;
+}
+
+.answers a.correct {
+    background: palegreen !important;
+    color: var(--dark) !important;
+}
+
+.quiz-button{
+    background-color: var(--greenish) !important;
+}
+
+.answers a {
+    border: 1px solid var(--dark);
+}
+
+.answers a:hover{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
 /* changeable image */
 
 .changeable-image{
@@ -440,16 +469,6 @@ div.highlight pre.code ol li, div.highlight pre.code ul li{
 
 div.highlight pre.code ol{
     padding: 0 0 0 40px !important;
-}
-
-/* add stylings to quizzes */
-
-.quiz-wrapper strong{
-    color: inherit;
-}
-
-.quiz-wrapper p {
-    margin-bottom: 1rem;
 }
 
 /* drag and drop quiz */
