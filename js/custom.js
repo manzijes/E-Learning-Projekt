@@ -93,7 +93,11 @@ $(document).ready(function () {
   });
 
   $('#quiz-2').quiz({
-    questions: quizTwo
+    questions: quizTwo,
+    // button text
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
+    restartButtonText: 'Neustart'
   });
 
   function fade() {
