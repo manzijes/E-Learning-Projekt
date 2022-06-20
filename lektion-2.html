@@ -17,10 +17,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/custom.js"></script>
-    <!-- plugin integration quiz -->
+    <!-- plugin integration quiz
     <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
-    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
-    <!-- plugin integration code highlighting -->
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script> -->
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="Dynamic-Quiz/dist/jquery.quiz-min.css">
+    <!-- plugin integration code highlight -->
     <link rel="stylesheet" href="css/jquery.highlight.css">
     <script src="js/jquery.highlight.js"></script>
 </head>
@@ -188,8 +190,44 @@
                                 <th>Ausgabeart</th>
                             </tr>
                             <tr>
-                                <td>Test</td>
-                                <td>Test</td>
+                                <td>all</td>
+                                <td>Alle Ausgabegeräte</td>
+                            </tr>
+                            <tr>
+                                <td>braille</td>
+                                <td>blindenschriftfähige Ausgabe</td>
+                            </tr>
+                            <tr>
+                                <td>embossed</td>
+                                <td>blindenschriftfähige Drucker</td>
+                            </tr>
+                            <tr>
+                                <td>handheld</td>
+                                <td>Palmtops, PDAs, WinCE-Geräte</td>
+                            </tr>
+                            <tr>
+                                <td>print</td>
+                                <td>Druckausgabe</td>
+                            </tr>
+                            <tr>
+                                <td>projection</td>
+                                <td>Ausgabe mit Beamern und Overhead-Projektoren</td>
+                            </tr>
+                            <tr>
+                                <td>screen</td>
+                                <td>Bildschirme</td>
+                            </tr>
+                            <tr>
+                                <td>speech</td>
+                                <td>Screenreader</td>
+                            </tr>
+                            <tr>
+                                <td>tty</td>
+                                <td>Ausgabegeräte mit feststehenden Zeichentypen</td>
+                            </tr>
+                            <tr>
+                                <td>tv</td>
+                                <td>TV-Geräte</td>
                             </tr>
                         </table>
                     </div>
@@ -197,7 +235,16 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="quiz-wrapper" id="quiztwo"></div>
+                        <div id="quiz-2">
+                            <div id="quiz-header">
+                                <h1>Anjas Quiz</h1>
+                            </div>
+                            <div id="quiz-start-screen">
+                                <p>
+                                    <a href="#" id="quiz-start-btn" class="quiz-button">Starte Quiz</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
