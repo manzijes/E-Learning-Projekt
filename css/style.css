@@ -385,6 +385,10 @@ table:not(.question-body *, .question-body) {
 
 /* quiz style overwrite */
 
+.question {
+    margin-bottom: 1rem;
+}
+
 #quiz-controls {
     background-color: var(--greenish) !important;
 }
