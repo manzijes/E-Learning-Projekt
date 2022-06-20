@@ -261,10 +261,10 @@
     startButton: '#quiz-start-btn',
     homeButton: '#quiz-home-btn',
     resultsScreen: '#quiz-results-screen',
-    resultsFormat: 'You got %score out of %total correct!',
+    resultsFormat: 'Du hast %score von %total korrect!',
     gameOverScreen: '#quiz-gameover-screen',
-    nextButtonText: 'Next',
-    finishButtonText: 'Finish',
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
     restartButtonText: 'Restart'
   };
 
