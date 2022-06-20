@@ -261,11 +261,11 @@
     startButton: '#quiz-start-btn',
     homeButton: '#quiz-home-btn',
     resultsScreen: '#quiz-results-screen',
-    resultsFormat: 'Du hast %score von %total korrect!',
+    resultsFormat: 'You got %score out of %total correct!',
     gameOverScreen: '#quiz-gameover-screen',
-    nextButtonText: 'Weiter',
-    finishButtonText: 'Ergebnis',
-    restartButtonText: 'Neustart'
+    nextButtonText: 'Next',
+    finishButtonText: 'Finish',
+    restartButtonText: 'Restart'
   };
 
   $.fn.quiz = function(options) {

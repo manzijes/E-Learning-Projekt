@@ -1,59 +1,36 @@
 const quizOne = [
   {
-    'q': 'A sample question?',
+    'q': 'Welche dieser Eigenschaften lässt sich in CSS3 NICHT abfragen?',
     'options': [
-      'Answer 1',
-      'Answer 2',
-      'Answer 3',
-      'Answer 4'
+      'Farben',
+      'HTML-Content',
+      'Layout',
+      'Schrifteigenschaften'
     ],
     'correctIndex': 1,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctResponse': 'Richtig, den Content eines Elements kannst (und solltest) du nicht mit CSS definieren.',
+    'incorrectResponse': 'Falsch! Du kannst in CSS3 die Farbe abfragen, das Layout auf verschiedene Weisen definieren und unterschiedliche Schrifteigenschaften bestimmen. Den HTML-Content eines Elements kannst (und solltest) du allerdings nicht mit CSS festlegen.'
   },
   {
-    'q': 'A smaple question?',
+    'q': 'Welche dieser Möglichkeiten ist KEINE korrekte Einbindungsart für Stylesheets?',
     'options': [
-      'Answer 1',
-      'Answer 2'
+      'Einbindung durch Referenz auf ein externes Stylesheet im Header der HTML-Datei',
+      'Einbindung mit dem HTML-Element css im Header'
     ],
     'correctIndex': 1,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctResponse': 'Genau! Es gibt kein HTML-Element namens css. Es ginge allerdings mit dem HTML-Element style im Header.',
+    'incorrectResponse': 'Leider falsch! Die Referenz auf ein Stylesheet im Header der HTML ist eine häufige Methode. Ein Beispiel, wie das aussehen könnte, findest du weiter oben im Kapitel unter "Einbindung von CSS".'
   },
   {
-    'q': 'A smaple question?',
+    'q': 'Mehrere CSS-Deklarationen musst du durch ... trennen',
     'options': [
-      'Answer 1',
-      'Answer 2',
-      'Answer 3',
-      'Answer 4'
+      'Semikolons',
+      'Kommas',
+      'Doppelpunkte'
     ],
-    'correctIndex': 2,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
-  },
-  {
-    'q': 'A smaple question?',
-    'options': [
-      'Answer 1',
-      'Answer 2'
-    ],
-    'correctIndex': 1,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
-  },
-  {
-    'q': 'A smaple question?',
-    'options': [
-      'Answer 1',
-      'Answer 2',
-      'Answer 3',
-      'Answer 4'
-    ],
-    'correctIndex': 3,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctIndex': 0,
+    'correctResponse': 'Genau! Mehrere CSS-Deklarationen musst du durch Semikolons trennen.',
+    'incorrectResponse': 'Leider falsch! Mehrere CSS-Deklarationen musst du durch Semikolons trennen.'
   }
 ]
 
