@@ -1,4 +1,67 @@
+const myQuiz = [
+  {
+    'q': 'A sample question?',
+    'options': [
+      'Answer 1',
+      'Answer 2',
+      'Answer 3',
+      'Answer 4'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  },
+  {
+    'q': 'A smaple question?',
+    'options': [
+      'Answer 1',
+      'Answer 2'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  },
+  {
+    'q': 'A smaple question?',
+    'options': [
+      'Answer 1',
+      'Answer 2',
+      'Answer 3',
+      'Answer 4'
+    ],
+    'correctIndex': 2,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  },
+  {
+    'q': 'A smaple question?',
+    'options': [
+      'Answer 1',
+      'Answer 2'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  },
+  {
+    'q': 'A smaple question?',
+    'options': [
+      'Answer 1',
+      'Answer 2',
+      'Answer 3',
+      'Answer 4'
+    ],
+    'correctIndex': 3,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  }
+]
+
 $(document).ready(function () {
+
+  $('#quiz-1').quiz({
+    questions: myQuiz
+  });
 
   function fade() {
     var animation_height = $(window).innerHeight() * 0.25;
@@ -140,100 +203,101 @@ $(document).ready(function () {
 
 }); // END $(document).ready(function() {...});
 
-// initialize quiz plugin
-$(document).ready(function () {
-  if ($('body').hasClass('ch-1')) {
-    $('#quizone').quiz({
-      // disable return and restart buttons
-      hidePrevBtn: true,
-      hideRestartBtn: true,
-      // path to JSON
-      quizJson: "quizzes/quiz1.json",
-      // handle results
-      onResults: function (good, total) {
-        var perc = good / total;
 
-        $(".ch-2").removeClass("disabled")
+// // initialize quiz plugin
+// $(document).ready(function () {
+//   if ($('body').hasClass('ch-1')) {
+//     $('#quizone').quiz({
+//       // disable return and restart buttons
+//       hidePrevBtn: true,
+//       hideRestartBtn: true,
+//       // path to JSON
+//       quizJson: "quizzes/quiz1.json",
+//       // handle results
+//       onResults: function (good, total) {
+//         var perc = good / total;
 
-        $input = $('<a class="button-default" href="lektion-2.html">Weiter mit Kapitel 2</a>');
-        $input.appendTo($("#quizone"));
+//         $(".ch-2").removeClass("disabled")
 
-        var alert = $('<div class="alert"></div>')
-          .prependTo(this);
-        if (perc == 0) {
-          alert.addClass('alert-danger')
-            .html('Alles falsch! Du solltest dir das Kapitel nochmal ansehen, bevor du fortfährst.');
-        } else if (perc > 0 && perc <= 0.25) {
-          alert.addClass('alert-danger')
-            .html('Schlechtes Ergebnis! Nur ' + good + ' von ' + total + ' Antworten waren richtig. Schau dir das Kapitel in Ruhe nochmal an.');
-        } else if (perc > 0.25 && perc <= 0.5) {
-          alert.addClass('alert-danger')
-            .html('Gerade ausreichend! Du hast ' + good + ' richtige Antworten von ' + total + '. Das geht noch besser.');
-        } else if (perc > 0.5 && perc <= 0.75) {
-          alert.addClass('alert-success')
-            .html('Dein Ergebnis kann sich sehen lassen! Du hast ' + good + ' richtige Antworten von ' + total + '. Wirf trotzdem nochmal einen Blick auf das Kapitel, bevor du fortfährst.');
-        } else if (perc > 0.75 && perc < 1) {
-          alert.addClass('alert-success')
-            .html('Gutes Ergebnis! Du hast ' + good + ' richtige Antworten von ' + total + '. Fast perfekt.');
-        } else if (perc == 1) {
-          alert.addClass('alert-success')
-            .html('Glückwunsch, du hast alle Fragen richtig beantwortet!');
-        }
-      }
-    });
-  }
-});
+//         $input = $('<a class="button-default" href="lektion-2.html">Weiter mit Kapitel 2</a>');
+//         $input.appendTo($("#quizone"));
 
-// quiz Kapitel 2
-$(document).ready(function () {
-  if ($('body').hasClass('ch-2')) {
-    $('#quiztwo').quiz({
-      // disable return and restart buttons
-      hidePrevBtn: true,
-      hideRestartBtn: true,
-      // path to JSON
-      quizJson: "quizzes/quiz2.json",
-      // handle results
-      onResults: function (good, total) {
-        var perc = good / total;
-        var alert = $('<div class="alert"></div>')
-          .prependTo(this);
-        if (perc == 0) {
-          alert.addClass('alert-danger')
-            .html('Alles falsch! Du solltest dir das Kapitel nochmal ansehen, bevor du fortfährst.');
-        } else if (perc > 0 && perc <= 0.25) {
-          alert.addClass('alert-danger')
-            .html('Schlechtes Ergebnis! Nur ' + good + ' von ' + total + ' Antworten waren richtig. Schau dir das Kapitel in Ruhe nochmal an.');
-        } else if (perc > 0.25 && perc <= 0.5) {
-          alert.addClass('alert-danger')
-            .html('Gerade ausreichend! Du hast ' + good + ' richtige Antworten von ' + total + '. Das geht noch besser.');
-        } else if (perc > 0.5 && perc <= 0.75) {
-          alert.addClass('alert-success')
-            .html('Dein Ergebnis kann sich sehen lassen! Du hast ' + good + ' richtige Antworten von ' + total + '. Wirf trotzdem nochmal einen Blick auf das Kapitel, bevor du fortfährst.');
-        } else if (perc > 0.75 && perc < 1) {
-          alert.addClass('alert-success')
-            .html('Gutes Ergebnis! Du hast ' + good + ' richtige Antworten von ' + total + '. Fast perfekt.');
-        } else if (perc == 1) {
-          alert.addClass('alert-success')
-            .html('Glückwunsch, du hast alle Fragen richtig beantwortet!');
-        }
-      }
-    });
-  }
-});
+//         var alert = $('<div class="alert"></div>')
+//           .prependTo(this);
+//         if (perc == 0) {
+//           alert.addClass('alert-danger')
+//             .html('Alles falsch! Du solltest dir das Kapitel nochmal ansehen, bevor du fortfährst.');
+//         } else if (perc > 0 && perc <= 0.25) {
+//           alert.addClass('alert-danger')
+//             .html('Schlechtes Ergebnis! Nur ' + good + ' von ' + total + ' Antworten waren richtig. Schau dir das Kapitel in Ruhe nochmal an.');
+//         } else if (perc > 0.25 && perc <= 0.5) {
+//           alert.addClass('alert-danger')
+//             .html('Gerade ausreichend! Du hast ' + good + ' richtige Antworten von ' + total + '. Das geht noch besser.');
+//         } else if (perc > 0.5 && perc <= 0.75) {
+//           alert.addClass('alert-success')
+//             .html('Dein Ergebnis kann sich sehen lassen! Du hast ' + good + ' richtige Antworten von ' + total + '. Wirf trotzdem nochmal einen Blick auf das Kapitel, bevor du fortfährst.');
+//         } else if (perc > 0.75 && perc < 1) {
+//           alert.addClass('alert-success')
+//             .html('Gutes Ergebnis! Du hast ' + good + ' richtige Antworten von ' + total + '. Fast perfekt.');
+//         } else if (perc == 1) {
+//           alert.addClass('alert-success')
+//             .html('Glückwunsch, du hast alle Fragen richtig beantwortet!');
+//         }
+//       }
+//     });
+//   }
+// });
 
-// change quiz language to german
-$(document).ready(function () {
-  $.quiz('localization', {
-    start: 'Start',
-    prev: 'Zurück',
-    next: 'Weiter',
-    results: 'Ergebnis ansehen',
-    restart: 'Zurück zum Start',
-    error: 'Error',
-    errmsg: [
-      'Bitte wähle eine Antwort',
-      'Manche Fragen wurden noch nicht beantwortet. Bitte gehe zurück bis zum Anfang und prüfe das.'
-    ]
-  });
-});
+// // quiz Kapitel 2
+// $(document).ready(function () {
+//   if ($('body').hasClass('ch-2')) {
+//     $('#quiztwo').quiz({
+//       // disable return and restart buttons
+//       hidePrevBtn: true,
+//       hideRestartBtn: true,
+//       // path to JSON
+//       quizJson: "quizzes/quiz2.json",
+//       // handle results
+//       onResults: function (good, total) {
+//         var perc = good / total;
+//         var alert = $('<div class="alert"></div>')
+//           .prependTo(this);
+//         if (perc == 0) {
+//           alert.addClass('alert-danger')
+//             .html('Alles falsch! Du solltest dir das Kapitel nochmal ansehen, bevor du fortfährst.');
+//         } else if (perc > 0 && perc <= 0.25) {
+//           alert.addClass('alert-danger')
+//             .html('Schlechtes Ergebnis! Nur ' + good + ' von ' + total + ' Antworten waren richtig. Schau dir das Kapitel in Ruhe nochmal an.');
+//         } else if (perc > 0.25 && perc <= 0.5) {
+//           alert.addClass('alert-danger')
+//             .html('Gerade ausreichend! Du hast ' + good + ' richtige Antworten von ' + total + '. Das geht noch besser.');
+//         } else if (perc > 0.5 && perc <= 0.75) {
+//           alert.addClass('alert-success')
+//             .html('Dein Ergebnis kann sich sehen lassen! Du hast ' + good + ' richtige Antworten von ' + total + '. Wirf trotzdem nochmal einen Blick auf das Kapitel, bevor du fortfährst.');
+//         } else if (perc > 0.75 && perc < 1) {
+//           alert.addClass('alert-success')
+//             .html('Gutes Ergebnis! Du hast ' + good + ' richtige Antworten von ' + total + '. Fast perfekt.');
+//         } else if (perc == 1) {
+//           alert.addClass('alert-success')
+//             .html('Glückwunsch, du hast alle Fragen richtig beantwortet!');
+//         }
+//       }
+//     });
+//   }
+// });
+
+// // change quiz language to german
+// $(document).ready(function () {
+//   $.quiz('localization', {
+//     start: 'Start',
+//     prev: 'Zurück',
+//     next: 'Weiter',
+//     results: 'Ergebnis ansehen',
+//     restart: 'Zurück zum Start',
+//     error: 'Error',
+//     errmsg: [
+//       'Bitte wähle eine Antwort',
+//       'Manche Fragen wurden noch nicht beantwortet. Bitte gehe zurück bis zum Anfang und prüfe das.'
+//     ]
+//   });
+// });
