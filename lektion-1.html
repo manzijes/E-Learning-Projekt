@@ -17,10 +17,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/custom.js"></script>
-    <!-- plugin integration quiz -->
+    <!-- plugin integration quiz
     <link rel="stylesheet" href="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.css">
-    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script>
-    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz-min.js"></script>
+    <script src="assets/plugins/responsive-dynamic-quiz/dist/jquery.quiz.min.js"></script> -->
+    <!-- plugin integration quiz -->
+    <link rel="stylesheet" href="Dynamic-Quiz/dist/jquery.quiz-min.css">
     <!-- plugin integration code highlight -->
     <link rel="stylesheet" href="css/jquery.highlight.css">
     <script src="js/jquery.highlight.js"></script>
@@ -75,15 +76,17 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <p>
-                            Hi, du musst unser neuer Praktikant sein! Ich bin Anja, deine Anleiterin. Freut mich, dich kennenzulernen.
+                            Hi, du musst unser neuer Praktikant sein! Ich bin Anja, deine Anleiterin. Freut mich, dich
+                            kennenzulernen.
                         </p>
                         <p>
-                            Und schon geht's ans Eingemachte. Ich habe hier eine Aufgabe für dich. 
-                            Wir haben einen Kundenauftrag für das Aufhübschen einer Website. 
+                            Und schon geht's ans Eingemachte. Ich habe hier eine Aufgabe für dich.
+                            Wir haben einen Kundenauftrag für das Aufhübschen einer Website.
                             Keine Sorge, das packst du schon.
                         </p>
-                        <p>Aber erst muss ich sichergehen, dass du die Basics drauf hast. 
-                           Fangen wir gleich mit den Basics der Basics an. Und zwar mit Cascading Stylesheets, kurz CSS.
+                        <p>Aber erst muss ich sichergehen, dass du die Basics drauf hast.
+                            Fangen wir gleich mit den Basics der Basics an. Und zwar mit Cascading Stylesheets, kurz
+                            CSS.
                         </p>
                     </div>
                     <div class="col-12 col-lg-6 image-text-wrapper">
@@ -111,14 +114,16 @@
                     </div>
                     <div class="col-12 col-xl-6">
                         <figure>
-                            <img class="bordered" src="assets/images/ZenGarden_ohne_css.png" alt="Aufnahme einer Website ohne CSS-Rules">
+                            <img class="bordered" src="assets/images/ZenGarden_ohne_css.png"
+                                alt="Aufnahme einer Website ohne CSS-Rules">
                             <figcaption>Website ohne CSS-Rules.</figcaption>
                         </figure>
                     </div>
 
                     <div class="col-12 col-xl-6">
                         <figure>
-                            <img class="bordered" src="assets/images/ZenGarden_mit_css.png" alt="Aufnahme einer Website mit CSS-Rules">
+                            <img class="bordered" src="assets/images/ZenGarden_mit_css.png"
+                                alt="Aufnahme einer Website mit CSS-Rules">
                             <figcaption>Website mit CSS-Rules.</figcaption>
                         </figure>
                     </div>
@@ -188,11 +193,14 @@
                         <p>Eine CSS-Regel besteht aus einem Selektor und einem Deklarationsblock.</p>
                         <p>
                             Der Selektor zeigt auf das HTML Element, das du stylen möchtest.
-                            Der Deklarationsblock beinhaltet eine oder mehr Deklarationen, die du durch Semikolons trennen musst.
+                            Der Deklarationsblock beinhaltet eine oder mehr Deklarationen, die du durch Semikolons
+                            trennen musst.
                         </p>
                         <p>
-                            Jede Deklaration beinhaltet den Namen einer CSS-Eigenschaft und einen Wert, getrennt durch einen Doppelpunkt.
-                            Mehrere CSS-Deklarationen musst du durch Semikolons trennen, und Deklarationsblöcke mit geschweiften Klammern umschließen.
+                            Jede Deklaration beinhaltet den Namen einer CSS-Eigenschaft und einen Wert, getrennt durch
+                            einen Doppelpunkt.
+                            Mehrere CSS-Deklarationen musst du durch Semikolons trennen, und Deklarationsblöcke mit
+                            geschweiften Klammern umschließen.
                         </p>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -206,7 +214,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <p>Du siehst also, das alles ist gar nicht so schwer.
-                         Aber hast du bis hierhin alles verstanden?
+                            Aber hast du bis hierhin alles verstanden?
                         </p>
                         <p>
                             Gut, dann lass mich dich einfach mal abfragen.
@@ -216,7 +224,17 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="quiz-wrapper" id="quizone"></div>
+                        <div id="quiz-1">
+                            <div id="quiz-header">
+                                <h1>Quiz Example</h1>
+                                <p><a id="quiz-home-btn">Quiz Home</a></p>
+                            </div>
+                            <div id="quiz-start-screen">
+                                <p>
+                                    <a href="#" id="quiz-start-btn" class="quiz-button">Start Quiz</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
