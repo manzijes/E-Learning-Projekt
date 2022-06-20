@@ -1,4 +1,4 @@
-const myQuiz = [
+const quizOne = [
   {
     'q': 'A sample question?',
     'options': [
@@ -57,10 +57,39 @@ const myQuiz = [
   }
 ]
 
+const quizTwo = [
+  {
+    'q': 'Eat my pants',
+    'options': [
+      'Answer Okay',
+      'Answer No',
+      'Answer Only if you eat mine',
+      'Answer I just brushed my teeth'
+    ],
+    'correctIndex': 3,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  },
+  {
+    'q': 'Testo',
+    'options': [
+      'Answer Presto',
+      'Answer Queso'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Custom correct response.',
+    'incorrectResponse': 'Custom incorrect response.'
+  }
+]
+
 $(document).ready(function () {
 
   $('#quiz-1').quiz({
-    questions: myQuiz
+    questions: quizOne
+  });
+
+  $('#quiz-2').quiz({
+    questions: quizTwo
   });
 
   function fade() {
