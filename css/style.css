@@ -405,7 +405,6 @@ div#quiz-buttons {
 .answers a.incorrect {
     background: var(--red) !important;
     border-color: var(--red);
-    color: var(--dark) !important;
 }
 
 .answers a.correct {
