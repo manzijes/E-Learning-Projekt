@@ -397,6 +397,10 @@ div#quiz-buttons {
     margin-bottom: 1rem !important;
 }
 
+#quiz-controls{
+    padding: 1rem !important;
+}
+
 #quiz-controls:not(.quiz-results-state #quiz-controls) {
     background-color: var(--greenish) !important;
     margin-top: 1rem;
