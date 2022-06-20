@@ -386,7 +386,7 @@ table:not(.question-body *, .question-body) {
 /* quiz style overwrite */
 
 a#quiz-restart-btn {
-    display: none;
+    display: none !important;
 }
 
 div#quiz-buttons {
