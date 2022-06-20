@@ -261,7 +261,7 @@
     startButton: '#quiz-start-btn',
     homeButton: '#quiz-home-btn',
     resultsScreen: '#quiz-results-screen',
-    resultsFormat: 'Du hast %score von %total korrect!',
+    resultsFormat: 'Du hast %score von %total korrekt!',
     gameOverScreen: '#quiz-gameover-screen',
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',

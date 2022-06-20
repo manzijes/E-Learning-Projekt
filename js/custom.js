@@ -66,7 +66,8 @@ $(document).ready(function () {
     // button text
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',
-    restartButtonText: 'Neustart'
+    restartButtonText: 'Neustart',
+    resultsFormat: 'Du hast %score von %total korrekt!'
   });
 
   $('#quiz-2').quiz({
@@ -74,7 +75,8 @@ $(document).ready(function () {
     // button text
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',
-    restartButtonText: 'Neustart'
+    restartButtonText: 'Neustart',
+    resultsFormat: 'Du hast %score von %total korrekt!'
   });
 
   function fade() {
