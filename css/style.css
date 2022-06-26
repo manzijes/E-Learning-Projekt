@@ -255,7 +255,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     text-transform: uppercase;
     max-width: 2000px;
     margin: 0 auto;
@@ -307,7 +307,7 @@ figcaption {
 footer{
     background-color: var(--light);
     color: var(--dark);
-    padding: 1rem 2rem;
+    padding: 1rem;
     max-width: 2000px;
     margin: 0 auto;
 }
