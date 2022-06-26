@@ -420,6 +420,7 @@ div#quiz-buttons {
 .goal, .goal h4 {
     /* background: #293133; */
     background-color: aliceblue;
+    border-radius: 0.25rem!important;
     /* color: white; */
 }
 
