@@ -385,9 +385,9 @@ table:not(.question-body *, .question-body) {
 
 /* quiz style overwrite */
 
-a#quiz-restart-btn {
+/* a#quiz-restart-btn {
     display: none !important;
-}
+} */
 
 div#quiz-buttons {
     margin-top: 1rem;
@@ -415,6 +415,12 @@ div#quiz-buttons {
     background: lightgreen !important;
     border-color: lightgreen;
     color: var(--dark) !important;
+}
+
+.goal, .goal h4 {
+    background: #293133;
+    /* background-color: aliceblue; */
+    color: white;
 }
 
 .goals p {
