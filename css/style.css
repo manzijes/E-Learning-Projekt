@@ -385,9 +385,9 @@ table:not(.question-body *, .question-body) {
 
 /* quiz style overwrite */
 
-a#quiz-restart-btn {
+/* a#quiz-restart-btn {
     display: none !important;
-}
+} */
 
 div#quiz-buttons {
     margin-top: 1rem;
@@ -417,14 +417,42 @@ div#quiz-buttons {
     color: var(--dark) !important;
 }
 
+.goal {
+    background-color: var(--basis);
+    border-radius: 0.25rem!important;
+    color: white;
+    border: 3px solid white;
+}
+
+.goal h4{
+    color: white;
+}
+.goals.done i{
+    color: var(--greenish);
+}
+.goals.done p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 .goals p {
     border: 1px solid var(--greenish);
     padding: 1rem;
     border-radius: 0.5rem;
 }
 
+a.link {
+    color: var(--dark);
+    font-weight: normal;
+}
+
+a.link:hover{
+    color: var(--greenish);
+}
+
 .quiz-button{
     background-color: var(--greenish) !important;
+    border-radius: 0.25rem!important;
 }
 
 .answers a {
