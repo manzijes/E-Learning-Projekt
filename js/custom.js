@@ -36,26 +36,91 @@ const quizOne = [
 
 const quizTwo = [
   {
-    'q': 'Eat my pants',
+    'q': 'Mit welchem Attribut lassen sich Medieneigenschaften für ein Stylesheet definieren?',
     'options': [
-      'Answer Okay',
-      'Answer No',
-      'Answer Only if you eat mine',
-      'Answer I just brushed my teeth'
+      '@media-rule',
+      '@mediatype',
+      '@method',
+      '@media'
     ],
     'correctIndex': 3,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctResponse': 'Genau! Mit dem Attribut @media lassen sich Medieneigenschaften für ein Stylesheet definieren.',
+    'incorrectResponse': 'Leider falsch! Mit dem Attribut @media lassen sich Medieneigenschaften für ein Stylesheet definieren.'
   },
   {
-    'q': 'Testo',
+    'q': 'Welche Medieneigenschaft gilt für alle Ausgabegeräte',
     'options': [
-      'Answer Presto',
-      'Answer Queso'
+      'default',
+      'all'
     ],
     'correctIndex': 1,
-    'correctResponse': 'Custom correct response.',
-    'incorrectResponse': 'Custom incorrect response.'
+    'correctResponse': 'Richtig. Der Medientyp media="all" gilt für alle Ausgabegeräte.',
+    'incorrectResponse': 'Leider falsch! Der Medientyp media="all" gilt für alle Ausgabegeräte. Gibst du keinen an, gilt das automatisch.'
+  }
+]
+
+const quizThree = [
+  {
+    'q': 'Welche Medieneigenschaft lässt sich mit CSS3 abfragen?',
+    'options': [
+      'Bildschirmhelligkeit',
+      'Gerätetypen',
+      'Größen von Viewports'
+    ],
+    'correctIndex': 2,
+    'correctResponse': 'Richtig! Du kannst unter anderem die Größen von Viewports abfragen.',
+    'incorrectResponse': 'Leider falsch! Momentan ist es nicht möglich, die eingestellte Bildschirmhelligkeit oder den Gerätetyp abzufragen.'
+  }
+]
+
+const quizFour = [
+  {
+    'q': 'Welche dieser Optionen ist keine Hauptkomponente, aus der sich Media Queries zusammensetzen?',
+    'options': [
+      'Schlüsselwort für den Medientyp',
+      'Ausdruck für die Medieneigenschaften',
+      'Schlüsselwort für Eingrenzungen (z.B. only)'
+    ],
+    'correctIndex': 2,
+    'correctResponse': 'Richtig! Media Queries setzen sich aus den Hauptkomponenten Medientyp und Medieneigenschaften zusammen.',
+    'incorrectResponse': 'Leider falsch! Schlüsselwörter für Eingrenzungen sind keine Hauptkomponente.'
+  },
+  {
+    'q': '@media [not|only] type1 and (expr1), type2 and (expr2), type3 and (expr3). Der gesamte Ausdruck ist nur dann wahr, wenn...',
+    'options': [
+      'keiner der Ausdrücke zutrifft',
+      'mindestens einer der Ausdrücke zutrifft',
+      'alle Ausdrücke zutreffen',
+      'höchstens einer der Ausdrücke zutrifft'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Richtig. Der gesamte Ausdruck ist wahr, wenn mindestens einer der Ausdrücke zutrifft.',
+    'incorrectResponse': 'Leider falsch. Der gesamte Ausdruck ist wahr, wenn mindestens einer der Ausdrücke zutrifft.'
+  }
+]
+
+const quizFive = [
+  {
+    'q': 'Welche dieser Aussagen trifft zu?',
+    'options': [
+      'Gerätepixel und CSS-Pixel sind das Gleiche',
+      'Der Viewport-Metatag wird im Footer der HTML-Datei definiert',
+      'Mit initial-scale=1.0 können Sie den anfänglichen Zoomgrad auf 1% setzen',
+      '@viewport kann auch innerhalb eines Media Query gesetzt werden'
+    ],
+    'correctIndex': 3,
+    'correctResponse': 'Richtig! @viewport kann auch innerhalb eines Media Query gesetzt werden.',
+    'incorrectResponse': 'Leider falsch! @viewport kann auch innerhalb eines Media Query gesetzt werden.'
+  },
+  {
+    'q': 'Die @viewport-Anweisung im CSS unterscheidet sich grundlegend vom Viewport-Metatag.',
+    'options': [
+      'richtig',
+      'falsch'
+    ],
+    'correctIndex': 1,
+    'correctResponse': 'Genau! Dich führt niemand in die Irre.',
+    'incorrectResponse': 'Leider falsch! Es gibt keine grundlegende Unterscheidung zwischen den beiden.'
   }
 ]
 
@@ -71,6 +136,30 @@ $(document).ready(function () {
   });
 
   $('#quiz-2').quiz({
+    questions: quizTwo,
+    // button text
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
+    restartButtonText: 'Neustart',
+    resultsFormat: 'Du hast %score von %total korrekt!'
+  });
+  $('#quiz-3').quiz({
+    questions: quizTwo,
+    // button text
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
+    restartButtonText: 'Neustart',
+    resultsFormat: 'Du hast %score von %total korrekt!'
+  });
+  $('#quiz-4').quiz({
+    questions: quizTwo,
+    // button text
+    nextButtonText: 'weiter',
+    finishButtonText: 'Ergebnis',
+    restartButtonText: 'Neustart',
+    resultsFormat: 'Du hast %score von %total korrekt!'
+  });
+  $('#quiz-5').quiz({
     questions: quizTwo,
     // button text
     nextButtonText: 'weiter',
