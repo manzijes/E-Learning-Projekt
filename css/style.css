@@ -435,6 +435,10 @@ a.link {
     font-weight: normal;
 }
 
+a.link:hover{
+    color: var(--greenish);
+}
+
 .quiz-button{
     background-color: var(--greenish) !important;
     border-radius: 0.25rem!important;
