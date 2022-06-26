@@ -430,6 +430,11 @@ div#quiz-buttons {
     border-radius: 0.5rem;
 }
 
+a.link {
+    color: var(--dark);
+    font-weight: normal;
+}
+
 .quiz-button{
     background-color: var(--greenish) !important;
     border-radius: 0.25rem!important;
