@@ -427,7 +427,14 @@ div#quiz-buttons {
 .goal h4{
     color: white;
 }
-
+.goals.done i{
+    color: var(--greenish);
+}
+.goals.done p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 .goals p {
     border: 1px solid var(--greenish);
     padding: 1rem;
