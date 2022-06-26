@@ -418,9 +418,9 @@ div#quiz-buttons {
 }
 
 .goal, .goal h4 {
-    background: #293133;
-    /* background-color: aliceblue; */
-    color: white;
+    /* background: #293133; */
+    background-color: aliceblue;
+    /* color: white; */
 }
 
 .goals p {
