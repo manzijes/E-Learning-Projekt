@@ -417,6 +417,12 @@ div#quiz-buttons {
     color: var(--dark) !important;
 }
 
+.goals p {
+    border: 1px solid var(--greenish);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
 .quiz-button{
     background-color: var(--greenish) !important;
 }
