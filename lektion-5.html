@@ -110,6 +110,292 @@
                 </div>
 
                 <div class="row">
+                    <div class="col-12">
+                        <h4>Viewport</h4>
+                        <p>
+                            Der <strong>Viewport</strong> ist der sichtbare Bereich auf dem Medium. Auf der Desktopanwendung z.B. ist das der innere Bereich des Browserfensters. 
+                            Dieser ändert sich mit der jeweiligen Größe des Bildschirms und des Fensters.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img class="bordered" src="assets/images/viewport_desktop.png"
+                                alt="Aufnahme einer Website ohne CSS-Rules">
+                            <figcaption>Screenshot mit Viewport Desktop</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img class="bordered" src="assets/images/viewport_mobil.png"
+                                alt="Aufnahme einer Website ohne CSS-Rules">
+                            <figcaption>Screenshot mit Viewport Mobil</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <h4>Layout-Viewport</h4>
+                        <p>
+                            Der <strong>Layout-Viewport</strong> wiederum ist die Bezugsgröße für die Darstellung von Websites auf mobilen Endgeräten. 
+                            Dabei beziehen sich im CSS-Code prozentuale Angaben immer auf den Layout-Viewport. 
+                            Das heißt, wenn du einem Element die CSS-Eigenschaft width: 50% gibst, dann nimmt dieses Element relativ zum Layout-Viewport, die halbe Breite ein.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img class="bordered" src="assets/images/abbildung_layout-viewport.png"
+                                alt="Aufnahme einer Website ohne CSS-Rules">
+                            <figcaption>Abbildung Layout-Viewport</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Pixel</h4>
+                        <p>
+                            Aufgrund von neuen hochauflösenden Displays sind Pixel nicht mehr gleich Pixel, 
+                            sondern wir müssen unterscheiden in Gerätepixel und CSS-Pixel.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <strong>Gerätepixel</strong> sind die Pixel, die physikalisch in den Displays verbaut sind. 
+                        Ihre Anzahl und Größe lassen sich nicht verändern, werden aber von Modell zu Modell immer mehr und dadurch hochauflösender.
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <strong>CSS-Pixel</strong> sind eine Einheit für die Darstellung von Inhalten auf Displays, dabei bezieht sich jede CSS-Größendeklaration auf die CSS-Pixel. 
+                        Beim Rein- und Rauszoomen in die Website werden die CSS-Pixel vergrößert oder verkleinert.
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <figure>
+                            <img class="bordered" src="assets/images/pixel.png"
+                                alt="Aufnahme einer Website ohne CSS-Rules">
+                            <figcaption>Abbildung Pixel</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        Aufgrund dieses Systems können auch bei hochauflösenden Displays Websites in vollem Ausmaße angezeigt werden. 
+                        Bei Geräten mit höherer Pixeldichte entsprechen mehrere Gerätepixel einem CSS-Pixel. 
+                        Das Verhältnis der physikalischen Gerätepixel zu den CSS-Pixel ergibt die Pixeldichte (device-pixel-ratio).
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            Zusammenfassend lässt sich sagen, dass sich eigentlich seit dem Einführen von hochauflösenden Displays nichts geändert hat. 
+                            Je höher die Auflösung, desto mehr Gerätepixel passen in einen CSS-Pixel und erlauben dadurch mehr Detailreichtum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Viewport-Metatag</h4>
+                        <p>
+                            Schauen wir uns nun mal den Viewport-Metatag mit den Einstellungsmöglichkeiten als Code an. 
+                            Wie alle Metatags werden diese im Header der HTML-Datei definiert.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="code-card">
+                        <pre class="code" data-language="HTML-Element">
+                            <meta name=”viewport” content=”kommaseparierte Viewport-Eigenschaften”>
+                        </pre>
+                            <p>
+                                Für eine Seite mit einer fixen Breite von 800 Pixeln, kannst du den Standard-Layout-Viewport des mobilen Browsers mit <strong>content=”width=800px”</strong> überschreiben 
+                                und dadurch auf 800 Pixel festsetzen.
+                                Dadurch würde nun beim Aufrufen der Website kein Platz verschenkt werden und statt des größeren Standart-Layout-Viewports, die Viewport-Breite von 800 Pixel verwendet.
+                                Die Höhe der Website kannst du ebenfalls so festlegen, aber das macht wenig Sinn, außer du hast vertikales Scrollen auf der Website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            Eine weitere wichtige Viewport-Eigenschaft ist der anfängliche Zoomgrad. Mit <strong>initial-scale=1.0</strong> kannst du diesen auf 100% setzen.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="code-card">
+                        <pre class="code" data-language="HTML-Element">
+                            <meta name=”viewport” content=”width=800px, initial-scale=1.0”>
+                        </pre>
+                            <p>
+                                In diesem Beispiel wird die Website nicht mehr skaliert, um sie auf kleinen Displays darzustellen, 
+                                sondern 1:1 dargestellt, zusätzlich dann mit einem Scrollbalken.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            Mit <strong>minimum-scale</strong> und <strong>maximum-scale</strong> kannst du minimale und maximale Zoomstufen definieren. 
+                            Mit <strong>user-scalable=no</strong> kannst du das Zoomen sogar komplett ausstellen, wodurch du den Benutzer allerdings arg einschränkst.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 goals">
+                        <p>
+                            Denke daran, dass wenn du die Zoom-Möglichkeiten eingrenzst, dass das Nutzer mit schwächeren Sehvermögen ausgrenzen kann. 
+                            Bedenke das!
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            Um nun also deine Website auf mobilen Anwendungen zu optimieren musst du die Skalierung des Browsers abschalten, dann diese nun selber definieren. 
+                            Dazu setzt du die Breite des Layout-Viewports mit <strong>width=device-width</strong> auf die Breite des visuellen Viewports.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+                            </pre>
+                            <p>
+                                Hierdurch werden auch die unterschiedlichen Standard-Layout-Viewports der verschiedenen Geräte genormt und auf die Displaygröße angepasst.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Hier hab ich dir noch eine Tabelle, in der du die Eigenschaften des Viewport-Metatags nochmal übersichtlich sehen kannst.
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Viewport-Einstellung</th>
+                                <th>Werte</th>
+                                <th>Definition</th>
+                            </tr>
+                            <tr>
+                                <td>width, height</td>
+                                <td>device-width, </br> 
+                                    device-height, </br>
+                                    [ganze Zahl]px</td>
+                                <td>Ermöglicht das Setzen des Layout-Viewports auf die Größe des virtuellen Viewports oder einer festen Breite</td>
+                            </tr>
+                            <tr>
+                                <td>initial-scale</td>
+                                <td>0.5 enstpricht 50 %, </br> 
+                                    1.0 enstpricht 100 %, </br>
+                                    2.0 enstpricht 200 %</td>
+                                <td>Anfangswert des Zoomgrades, in dem eine Seite aufgebaut wird</td>
+                            </tr>
+                            <tr>
+                                <td>user-scalable</td>
+                                <td>yes (default), no</td>
+                                <td>Erlaubt oder unterbindet das Skalieren der Website für den Benutzer</td>
+                            </tr>
+                            <tr>
+                                <td>minimum-scale, </br>
+                                    maximum-scale</td>
+                                <td>0.5 enstpricht 50 %, </br> 
+                                    1.0 enstpricht 100 %, </br>
+                                    2.0 enstpricht 200 %</td>
+                                <td>Schränkt die minimale oder maximale Skalierung der Seite ein</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Die @viewport-Anweisung im CSS</h4>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            Die <strong>@viewport-Anweisung</strong> im CSS hat ähnliche Eigenschaften wie das Viewport-Metatag. 
+                            Bei der CSS-Deklaration musst du aber immer mit den Browserpräfixen arbeiten. 
+                            Mit dieser Anweisung kannst du das browsereigene Layout-Viewport mit der jeweiligen Gerätebreite überschrieben:
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+                                <style>
+                                    @-ms-viewport { width: device-width; zoom:1; }
+                                    @-o-viewport { width: device-width; zoom:1 }
+                                    @viewport { width: device-width; zoom:1; }
+                                </style>
+                            </pre>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Weitere Eigenschaften für <strong>@viewport</strong> sind folgende:
+                        </p>
+                        <table>
+                            <tr>
+                                <th>Eigenschaft</th>
+                                <th>Werte</th>
+                                <th>Beschreibung</th>
+                            </tr>
+                            <tr>
+                                <td>width, height</td>
+                                <td>auto, device-width, </br>
+                                    absolute oder relative Längenangaben</td>
+                                <td>Ermöglicht das Setzen des Viewports auf die Größe des virtuellen Viewports oder einer festen Breite</td>
+                            </tr>
+                            <tr>
+                                <td>max-width, max-height</td>
+                                <td>auto, device-width, </br>
+                                    absolute oder relative Längenangaben</td>
+                                <td>Gibt an, wie breit bzw. hoch der Viewport maximal werden kann</td>
+                            </tr>
+                            <tr>
+                                <td>min-width, min-height</td>
+                                <td>auto, device-width, </br>
+                                    absolute oder relative Längenangaben</td>
+                                <td>Gibt an, wie breit bzw. hoch der Viewport minimal werden kann</td>
+                            </tr>
+                            <tr>
+                                <td>zoom</td>
+                                <td>auto, Zahlenwert (z.B. 1.5), </br>
+                                    Prozentwert (z.B. 150 %)</td>
+                                <td>Entspricht dem initial-scale im Metatag</td>
+                            </tr>
+                            <tr>
+                                <td>min-zoom</td>
+                                <td>auto, Zahlenwert (z.B. 1.5), </br>
+                                    Prozentwert (z.B. 150 %)</td>
+                                <td>Entspricht dem minimum-scale im Metatag</td>
+                            </tr>
+                            <tr>
+                                <td>maxzoom</td>
+                                <td>auto, Zahlenwert (z.B. 1.5), </br>
+                                    Prozentwert (z.B. 150 %)</td>
+                                <td>Entspricht dem maximum-scale im Metatag</td>
+                            </tr>
+                            <tr>
+                                <td>user-zoom</td>
+                                <td>zoom, fixed</td>
+                                <td>Entspricht dem user-scaleable im Metatag</td>
+                            </tr>
+                            <tr>
+                                <td>orientation</td>
+                                <td>auto, portrait, landscape</td>
+                                <td>Gibt an, dass ein Dokument im Hoch- bzw. Querformat betrachtet werden soll - 
+                                    ein anderer Wert als auto verhindert eine automatische Dreung des Dokuments beim Drehen des Geräts
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="code-card">
+                            <pre class="code" data-language="HTML-Element">
+                                @media screen and (max-device-width: 480px) {
+                                    @viewport { width:   
+                                    device-width; }
+                                   /* CSS-Anweisungen */
+                                }
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            <strong>@viewport</strong> kannst du auch innerhalb eines Media Query setzen. 
+                            Dies ermöglicht auch unterschiedliche Angaben für verschiedene Medien.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
                     <div class="col-12 col-lg-6 image-text-wrapper">
                         <img class="person" src="assets/images/anja_party.svg" alt="mentor">
                     </div>
