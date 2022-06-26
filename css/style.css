@@ -385,9 +385,9 @@ table:not(.question-body *, .question-body) {
 
 /* quiz style overwrite */
 
-a#quiz-restart-btn {
+/* a#quiz-restart-btn {
     display: none !important;
-}
+} */
 
 div#quiz-buttons {
     margin-top: 1rem;
@@ -417,6 +417,13 @@ div#quiz-buttons {
     color: var(--dark) !important;
 }
 
+.goal, .goal h4 {
+    /* background: #293133; */
+    background-color: aliceblue;
+    border-radius: 0.25rem!important;
+    /* color: white; */
+}
+
 .goals p {
     border: 1px solid var(--greenish);
     padding: 1rem;
@@ -425,6 +432,7 @@ div#quiz-buttons {
 
 .quiz-button{
     background-color: var(--greenish) !important;
+    border-radius: 0.25rem!important;
 }
 
 .answers a {
