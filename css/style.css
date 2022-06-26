@@ -417,11 +417,15 @@ div#quiz-buttons {
     color: var(--dark) !important;
 }
 
-.goal, .goal h4 {
-    /* background: #293133; */
-    background-color: aliceblue;
+.goal {
+    background-color: var(--basis);
     border-radius: 0.25rem!important;
-    /* color: white; */
+    color: white;
+    border: 3px solid white;
+}
+
+.goal h4{
+    color: white;
 }
 
 .goals p {
