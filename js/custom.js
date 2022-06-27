@@ -1,6 +1,6 @@
 const quizOne = [
   {
-    'q': 'Welche dieser Eigenschaften lässt sich in CSS3 NICHT abfragen?',
+    'q': 'Welche dieser Eigenschaften lässt sich in CSS3 NICHT definieren?',
     'options': [
       'Farben',
       'HTML-Content',
@@ -9,7 +9,7 @@ const quizOne = [
     ],
     'correctIndex': 1,
     'correctResponse': 'Richtig, den Content eines Elements kannst (und solltest) du nicht mit CSS definieren.',
-    'incorrectResponse': 'Falsch! Du kannst in CSS3 die Farbe abfragen, das Layout auf verschiedene Weisen definieren und unterschiedliche Schrifteigenschaften bestimmen. Den HTML-Content eines Elements kannst (und solltest) du allerdings nicht mit CSS festlegen.'
+    'incorrectResponse': 'Falsch! Du kannst in CSS3 die Farbe definieren, das Layout und unterschiedliche Schrifteigenschaften bestimmen. Den HTML-Content eines Elements kannst (und solltest) du allerdings nicht mit CSS festlegen.'
   },
   {
     'q': 'Welche dieser Möglichkeiten ist KEINE korrekte Einbindungsart für Stylesheets?',
@@ -144,7 +144,7 @@ $(document).ready(function () {
     resultsFormat: 'Du hast %score von %total korrekt!'
   });
   $('#quiz-3').quiz({
-    questions: quizTwo,
+    questions: quizThree,
     // button text
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',
@@ -152,7 +152,7 @@ $(document).ready(function () {
     resultsFormat: 'Du hast %score von %total korrekt!'
   });
   $('#quiz-4').quiz({
-    questions: quizTwo,
+    questions: quizFour,
     // button text
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',
@@ -160,7 +160,7 @@ $(document).ready(function () {
     resultsFormat: 'Du hast %score von %total korrekt!'
   });
   $('#quiz-5').quiz({
-    questions: quizTwo,
+    questions: quizFive,
     // button text
     nextButtonText: 'weiter',
     finishButtonText: 'Ergebnis',
