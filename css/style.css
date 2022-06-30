@@ -417,16 +417,16 @@ div#quiz-buttons {
     color: var(--dark) !important;
 }
 
-.goal * {
+/* .goal * {
     color: white;
-}
+} */
 
 .goal {
     
-    /* background-color: var(--light); */
+    background-color: var(--light);
     border-radius: 0.25rem!important;
-    background-color: var(--basis);
-    border: 2px solid white;
+    /* background-color: var(--basis);
+    border: 2px solid white; */
 }
 
 .goals.done i{
